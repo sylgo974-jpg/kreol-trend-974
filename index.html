@@ -266,6 +266,46 @@
             line-height: 1.6;
         }
 
+        .info-box {
+            background: #e8f5e9;
+            border: 5px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 6px 6px 0 rgba(0,0,0,0.3);
+        }
+
+        .info-box::before {
+            content: '♿';
+            font-size: 2em;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+        }
+
+        .info-box h3 {
+            margin-left: 60px;
+            font-family: 'Bangers', cursive;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #2e7d32;
+        }
+
+        .info-box p, .info-box ul {
+            margin-left: 60px;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+
+        .info-box ul {
+            margin-top: 10px;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+        }
+
         .data-table {
             width: 100%;
             border-collapse: separate;
@@ -328,7 +368,7 @@
         }
 
         .hidden-content.show {
-            max-height: 5000px;
+            max-height: 8000px;
         }
 
         .context-box {
@@ -547,6 +587,136 @@
                     ✅ 100% scan<br>
                     ⚙️ Nécessite aménagements
                 </p>
+            </div>
+        </div>
+
+        <!-- ANNEXE RQTH LÉA -->
+        <div class="mission-panel" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #e8f5e9 100%);">
+            <h2 style="font-family: 'Bangers', cursive; font-size: 2.5em; text-align: center; color: #2e7d32; margin-bottom: 20px; text-shadow: 2px 2px 0 rgba(0,0,0,0.1);">
+                ♿ ANNEXE RQTH - PROFIL LÉA ♿
+            </h2>
+            
+            <div class="info-box">
+                <h3>INFORMATIONS CONFIDENTIELLES</h3>
+                <p><strong>Salariée :</strong> Léa M.<br>
+                <strong>Type de handicap :</strong> Trouble du spectre autistique (TSA) léger / Troubles DYS associés (dyspraxie)<br>
+                <strong>Date entretien RQTH :</strong> Il y a 6 semaines (lors de l'intégration)</p>
+            </div>
+
+            <button class="expand-btn" onclick="toggleContent('annexeRQTH')" style="background: #4caf50; margin: 20px auto; display: block;">♿ VOIR LE RAPPORT D'ENTRETIEN RQTH</button>
+
+            <div id="annexeRQTH" class="hidden-content">
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0; color: #2e7d32;">📝 Manifestations concrètes en situation de travail logistique</h3>
+                
+                <div style="background: white; border: 4px solid #4caf50; border-radius: 15px; padding: 25px; margin: 20px 0;">
+                    <h4 style="font-size: 1.4em; color: #ff6b6b; margin-bottom: 15px; font-weight: 700;">🔊 Sensibilité sensorielle</h4>
+                    <ul style="line-height: 2; font-size: 1.05em;">
+                        <li><strong>Difficulté à travailler dans des environnements bruyants</strong> : zones de flux avec chariots, musique forte en fond, conversations multiples simultanées</li>
+                        <li><strong>Fatigue accrue en présence de stimuli visuels multiples</strong> : écrans clignotants, signalétique complexe, lumières néons agressifs</li>
+                        <li><strong>Besoin d'un espace de travail calme et structuré</strong></li>
+                    </ul>
+                </div>
+
+                <div style="background: white; border: 4px solid #4caf50; border-radius: 15px; padding: 25px; margin: 20px 0;">
+                    <h4 style="font-size: 1.4em; color: #ff6b6b; margin-bottom: 15px; font-weight: 700;">📋 Besoin de clarté et de prévisibilité</h4>
+                    <ul style="line-height: 2; font-size: 1.05em;">
+                        <li><strong>Nécessité d'avoir des consignes écrites, claires, avec un ordre précis</strong> : FALC (Facile À Lire et à Comprendre) <strong>INDISPENSABLE</strong></li>
+                        <li><strong>Déstabilisation face aux changements imprévus</strong> : de planning, de poste, de procédure</li>
+                        <li><strong>Temps d'adaptation plus long lors de nouvelles tâches</strong> : besoin de formation progressive et répétitive</li>
+                        <li><strong>Préfère les routines stables</strong> : mêmes horaires, mêmes postes, mêmes collègues</li>
+                    </ul>
+                </div>
+
+                <div style="background: white; border: 4px solid #4caf50; border-radius: 15px; padding: 25px; margin: 20px 0;">
+                    <h4 style="font-size: 1.4em; color: #ff6b6b; margin-bottom: 15px; font-weight: 700;">✋ Coordination motrice fine (dyspraxie)</h4>
+                    <ul style="line-height: 2; font-size: 1.05em;">
+                        <li><strong>Gestes d'emballage plus lents mais TRÈS précis</strong> une fois la routine installée</li>
+                        <li><strong>Difficulté avec certaines manipulations</strong> nécessitant rapidité + précision simultanées (ex. : scotchage rapide sous pression)</li>
+                        <li><strong>Excellente qualité une fois le geste automatisé</strong> : zéro erreur si respecte son rythme</li>
+                    </ul>
+                </div>
+
+                <div style="background: white; border: 4px solid #4caf50; border-radius: 15px; padding: 25px; margin: 20px 0;">
+                    <h4 style="font-size: 1.4em; color: #ff6b6b; margin-bottom: 15px; font-weight: 700;">👥 Interactions sociales</h4>
+                    <ul style="line-height: 2; font-size: 1.05em;">
+                        <li><strong>Communication directe et littérale</strong> : peut ne pas saisir l'implicite ou l'humour</li>
+                        <li><strong>Préfère les échanges structurés et écrits</strong> aux briefings oraux improvisés</li>
+                        <li><strong>Besoin de consignes explicites</strong> : "Fais ça" plutôt que "Tu pourrais peut-être..."</li>
+                        <li><strong>Apprécie le travail en autonomie</strong> une fois les consignes comprises</li>
+                    </ul>
+                </div>
+
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0; color: #2e7d32;">⚙️ Aménagements mis en place</h3>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th style="background: #4caf50;">Besoin identifié</th>
+                            <th style="background: #4caf50;">Aménagement mis en place</th>
+                            <th style="background: #4caf50;">Résultat observé</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #e8f5e9;">
+                            <td><strong>Sensibilité au bruit</strong></td>
+                            <td>Poste emballage en zone calme (fond de l'entrepôt) + casque anti-bruit autorisé</td>
+                            <td>✅ Fatigue réduite, concentration améliorée</td>
+                        </tr>
+                        <tr style="background: #f1f8f4;">
+                            <td><strong>Consignes écrites</strong></td>
+                            <td>Fiche FALC illustrée pour chaque type d'emballage + pictogrammes</td>
+                            <td>✅ Autonomie quasi totale, zéro erreur</td>
+                        </tr>
+                        <tr style="background: #e8f5e9;">
+                            <td><strong>Pauses régulières</strong></td>
+                            <td>Pauses de 15 min toutes les 2h (au lieu de 10 min toutes les 3h)</td>
+                            <td>✅ Maintien performance toute la journée</td>
+                        </tr>
+                        <tr style="background: #f1f8f4;">
+                            <td><strong>Prévisibilité</strong></td>
+                            <td>Planning fixé 1 semaine à l'avance + même poste (emballage)</td>
+                            <td>✅ Sérénité, réduction stress</td>
+                        </tr>
+                        <tr style="background: #e8f5e9;">
+                            <td><strong>Adaptation au rythme</strong></td>
+                            <td>Objectif : 24 colis/h (au lieu de 33) + pas de pression vitesse</td>
+                            <td>✅ Qualité exceptionnelle (OTIF 98-99%)</td>
+                        </tr>
+                        <tr style="background: #f1f8f4;">
+                            <td><strong>Communication claire</strong></td>
+                            <td>Référent unique (manager direct) + consignes écrites</td>
+                            <td>✅ Compréhension rapide, moins d'anxiété</td>
+                        </tr>
+                        <tr style="background: #e8f5e9;">
+                            <td><strong>Outils numériques</strong></td>
+                            <td>Scan systématique (100%) avec retour visuel clair (✓ ou ✗)</td>
+                            <td>✅ Autonomie, contrôle qualité intégré</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="warning-box" style="background: #fff3e0; border-color: #ff9800; margin-top: 30px;">
+                    <h3 style="color: #e65100;">⚠️ POINTS DE VIGILANCE POUR LE SUPER-SAMEDI</h3>
+                    <p>
+                        <strong>Risques identifiés :</strong><br>
+                        🚨 Environnement ULTRA bruyant (musique forte, cris, urgence)<br>
+                        🚨 Changements imprévus de rythme et d'organisation<br>
+                        🚨 Pression temporelle accrue<br>
+                        🚨 Présence d'intérimaires = nouveaux visages, nouvelle dynamique<br><br>
+                        <strong>→ Evan DOIT prévoir des aménagements spécifiques pour maintenir la performance de Léa !</strong>
+                    </p>
+                </div>
+
+                <div style="background: #4caf50; color: white; padding: 20px; border: 4px solid #000; border-radius: 10px; margin-top: 20px;">
+                    <h3 style="font-family: 'Bangers', cursive; font-size: 1.8em; margin-bottom: 10px; text-shadow: 2px 2px 0 rgba(0,0,0,0.3);">🎯 POINTS FORTS DE LÉA</h3>
+                    <p style="font-size: 1.1em; line-height: 1.8;">
+                        ✅ <strong>Fiabilité exceptionnelle</strong> : OTIF 98-99% constant<br>
+                        ✅ <strong>Zéro erreur qualité</strong> quand respect de son rythme<br>
+                        ✅ <strong>Autonomie complète</strong> avec outils numériques (100% scan)<br>
+                        ✅ <strong>Stabilité performance</strong> : pas de baisse malgré 12 semaines d'activité<br>
+                        ✅ <strong>Ponctualité et assiduité</strong> : zéro absence, zéro retard
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -1019,7 +1189,7 @@
                     <li>📅 À partir des données Steven → Crée <strong>Planning détaillé</strong></li>
                     <li>⏰ Gère arrivées échelonnées, pauses, rotations</li>
                     <li>🛠️ Place Sylvain sur <strong>poste adapté</strong></li>
-                    <li>♿ Aménage planning Léa (<strong>RQTH</strong>)</li>
+                    <li>♿ Aménage planning Léa (<strong>RQTH</strong>) - VOIR ANNEXE RQTH !</li>
                     <li>⚖️ Vérifie <strong>droit du travail</strong> (temps max, repos)</li>
                 </ul>
             </div>

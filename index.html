@@ -283,12 +283,14 @@
             text-align: left;
             font-weight: 700;
             border-bottom: 3px solid #000;
+            font-size: 0.9em;
         }
 
         .data-table td {
             padding: 12px 15px;
             border-bottom: 2px solid #ddd;
             background: white;
+            font-size: 0.95em;
         }
 
         .data-table tr:hover td {
@@ -326,7 +328,7 @@
         }
 
         .hidden-content.show {
-            max-height: 3000px;
+            max-height: 5000px;
         }
 
         .context-box {
@@ -420,6 +422,14 @@
             font-size: 2em;
             margin: 20px 0;
             box-shadow: 6px 6px 0 rgba(0,0,0,0.3);
+        }
+
+        .annexe-intro {
+            background: #f0f0f0;
+            padding: 15px;
+            border-left: 5px solid #667eea;
+            margin: 20px 0 10px 0;
+            font-style: italic;
         }
     </style>
 </head>
@@ -587,24 +597,25 @@
                 </ul>
             </div>
 
-            <button class="expand-btn" onclick="toggleContent('annexe1')">📊 VOIR LES DONNÉES - ANNEXE 1</button>
+            <button class="expand-btn" onclick="toggleContent('annexe1')">📊 VOIR LES DONNÉES - ANNEXES 1A, 1B, 1C</button>
 
             <div id="annexe1" class="hidden-content">
-                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 20px 0;">📋 Annexe 1A - Production Semaine N</h3>
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">📋 Annexe 1A – Production individuelle Sylvain ET Léa (semaine N)</h3>
+                <p class="annexe-intro"><strong>OTIF</strong> = commandes livrées <strong>On Time In Full</strong> / commandes totales.</p>
                 <table class="data-table">
                     <thead>
                         <tr>
                             <th>Jour</th>
                             <th>Nom</th>
-                            <th>Colis</th>
+                            <th>Colis préparés</th>
                             <th>Erreurs</th>
                             <th>Heures</th>
-                            <th>Pauses</th>
+                            <th>Pauses (min)</th>
                             <th>Cmd confiées</th>
-                            <th>OTIF</th>
+                            <th>OTIF livrées</th>
                             <th>Taux OTIF</th>
                             <th>Retours</th>
-                            <th>Scan</th>
+                            <th>Mode prépa</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -613,130 +624,130 @@
                             <td><strong>Sylvain</strong></td>
                             <td>220</td>
                             <td>2</td>
-                            <td>8h</td>
-                            <td>45min</td>
+                            <td>8 h</td>
+                            <td>45</td>
                             <td>210</td>
                             <td>205</td>
-                            <td>97.6%</td>
+                            <td>97,6%</td>
                             <td>1</td>
-                            <td>80%</td>
+                            <td>80% scan / 20% papier</td>
                         </tr>
                         <tr style="background: #e8f5e9;">
-                            <td>Lundi</td>
+                            <td></td>
                             <td><strong>Léa</strong></td>
                             <td>150</td>
                             <td>0</td>
-                            <td>7h</td>
-                            <td>60min</td>
+                            <td>7 h</td>
+                            <td>60</td>
                             <td>150</td>
                             <td>149</td>
-                            <td>99.3%</td>
+                            <td>99,3%</td>
                             <td>0</td>
-                            <td>100%</td>
+                            <td>100% scan (assistée)</td>
                         </tr>
                         <tr style="background: #fff3e0;">
                             <td>Mardi</td>
                             <td><strong>Sylvain</strong></td>
                             <td>190</td>
                             <td>8</td>
-                            <td>8h</td>
-                            <td>30min</td>
+                            <td>8 h</td>
+                            <td>30</td>
                             <td>195</td>
                             <td>180</td>
-                            <td>92.3%</td>
+                            <td>92,3%</td>
                             <td>3</td>
-                            <td>60%</td>
+                            <td>60% scan / 40% papier</td>
                         </tr>
                         <tr style="background: #e8f5e9;">
-                            <td>Mardi</td>
+                            <td></td>
                             <td><strong>Léa</strong></td>
                             <td>152</td>
                             <td>1</td>
-                            <td>7h</td>
-                            <td>60min</td>
+                            <td>7 h</td>
+                            <td>60</td>
                             <td>152</td>
                             <td>150</td>
-                            <td>98.7%</td>
+                            <td>98,7%</td>
                             <td>0</td>
-                            <td>100%</td>
+                            <td>100% scan (assistée)</td>
                         </tr>
                         <tr style="background: #ffcdd2;">
                             <td>Mercredi</td>
                             <td><strong>Sylvain</strong></td>
                             <td>150</td>
                             <td>15</td>
-                            <td>8h</td>
-                            <td>20min</td>
+                            <td>8 h</td>
+                            <td>20</td>
                             <td>185</td>
                             <td>155</td>
-                            <td>83.8%</td>
+                            <td>83,8%</td>
                             <td>5</td>
-                            <td>40%</td>
+                            <td>40% scan / 60% papier</td>
                         </tr>
                         <tr style="background: #e8f5e9;">
-                            <td>Mercredi</td>
+                            <td></td>
                             <td><strong>Léa</strong></td>
                             <td>148</td>
                             <td>1</td>
-                            <td>7h</td>
-                            <td>60min</td>
+                            <td>7 h</td>
+                            <td>60</td>
                             <td>148</td>
                             <td>146</td>
-                            <td>98.6%</td>
+                            <td>98,6%</td>
                             <td>0</td>
-                            <td>100%</td>
+                            <td>100% scan (assistée)</td>
                         </tr>
                         <tr style="background: #f44336; color: white;">
                             <td>Jeudi</td>
                             <td><strong>Sylvain</strong></td>
                             <td>100</td>
                             <td>25</td>
-                            <td>8h</td>
-                            <td>10min</td>
+                            <td>8 h</td>
+                            <td>10</td>
                             <td>180</td>
                             <td>135</td>
-                            <td>75.0%</td>
+                            <td>75,0%</td>
                             <td>7</td>
-                            <td>20%</td>
+                            <td>20% scan / 80% papier</td>
                         </tr>
                         <tr style="background: #e8f5e9;">
-                            <td>Jeudi</td>
+                            <td></td>
                             <td><strong>Léa</strong></td>
                             <td>145</td>
                             <td>2</td>
-                            <td>7h</td>
-                            <td>60min</td>
+                            <td>7 h</td>
+                            <td>60</td>
                             <td>145</td>
                             <td>142</td>
-                            <td>97.9%</td>
+                            <td>97,9%</td>
                             <td>1</td>
-                            <td>100%</td>
+                            <td>100% scan (assistée)</td>
                         </tr>
                         <tr style="background: #d32f2f; color: white; font-weight: bold;">
                             <td>Vendredi*</td>
                             <td><strong>Sylvain</strong></td>
-                            <td>60</td>
+                            <td>60 (estimé)</td>
                             <td>30</td>
-                            <td>8h</td>
-                            <td>0min</td>
-                            <td>170</td>
-                            <td>110</td>
-                            <td>64.7%</td>
+                            <td>8 h (prévu)</td>
+                            <td>0 (déclaré)</td>
+                            <td>170 (estimé)</td>
+                            <td>110 (estimé)</td>
+                            <td>64,7%</td>
                             <td>6</td>
-                            <td>10%</td>
+                            <td>10% scan / 90% papier</td>
                         </tr>
                         <tr style="background: #e8f5e9;">
-                            <td>Vendredi*</td>
+                            <td></td>
                             <td><strong>Léa</strong></td>
-                            <td>140</td>
+                            <td>140 (estimé)</td>
                             <td>2</td>
-                            <td>7h</td>
-                            <td>60min</td>
-                            <td>140</td>
-                            <td>137</td>
-                            <td>97.9%</td>
+                            <td>7 h (prévu)</td>
+                            <td>60</td>
+                            <td>140 (estimé)</td>
+                            <td>137 (estimé)</td>
+                            <td>97,9%</td>
                             <td>1</td>
-                            <td>100%</td>
+                            <td>100% scan (assistée)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -745,6 +756,214 @@
                     <h3>🔥 ALERTE ROUGE</h3>
                     <p>Performance Sylvain en chute libre : -73% colis (220→60), erreurs x15, OTIF -33 points, scan divisé par 8 !</p>
                 </div>
+
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">📊 Annexe 1B – Comparatif équipe complète (semaine N)</h3>
+                <p class="annexe-intro"><em>Effectif total : 7 préparateurs (Sylvain + Léa + 5 autres). Moyenne équipe stable ~220 colis/jour.</em></p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Jour</th>
+                            <th>Commandes totales jour</th>
+                            <th>Moy. colis/prépa</th>
+                            <th>Erreurs moy/prépa</th>
+                            <th>Temps moy/colis (min)</th>
+                            <th>Taux scan moyen</th>
+                            <th>OTIF équipe</th>
+                            <th>Satisfaction (1-5)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>1 540</td>
+                            <td>220</td>
+                            <td>1,0</td>
+                            <td>1,9</td>
+                            <td>90%</td>
+                            <td>98,2%</td>
+                            <td>4,7</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>1 550</td>
+                            <td>221</td>
+                            <td>1,1</td>
+                            <td>2,0</td>
+                            <td>91%</td>
+                            <td>97,5%</td>
+                            <td>4,6</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>1 530</td>
+                            <td>219</td>
+                            <td>1,3</td>
+                            <td>2,1</td>
+                            <td>92%</td>
+                            <td>96,8%</td>
+                            <td>4,5</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>1 540</td>
+                            <td>220</td>
+                            <td>1,7</td>
+                            <td>2,1</td>
+                            <td>92%</td>
+                            <td>96,0%</td>
+                            <td>4,3</td>
+                        </tr>
+                        <tr style="background: #fff3e0;">
+                            <td>Vendredi*</td>
+                            <td>1 550 (estimé)</td>
+                            <td>221 (estimé)</td>
+                            <td>2,0 (estimé)</td>
+                            <td>2,2 (estimé)</td>
+                            <td>93% (estimé)</td>
+                            <td>95,5% (estimé)</td>
+                            <td>4,2 (estimé)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">📈 Annexe 1C – Historique 12 semaines Sylvain & Léa</h3>
+                <p class="annexe-intro">Période : 12 semaines (Mois N-3, N-2, N-1).<br><em>Léa présente depuis Semaine 7 seulement.</em></p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Semaine</th>
+                            <th>Sylvain colis/j</th>
+                            <th>Sylvain erreurs/j</th>
+                            <th>Sylvain OTIF</th>
+                            <th>Léa colis/j</th>
+                            <th>Léa erreurs/j</th>
+                            <th>Léa OTIF</th>
+                            <th>Commentaire manager</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Semaine 1</td>
+                            <td>212</td>
+                            <td>2</td>
+                            <td>98,1%</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>« Sylvain très fiable. »</td>
+                        </tr>
+                        <tr>
+                            <td>Semaine 2</td>
+                            <td>210</td>
+                            <td>2</td>
+                            <td>97,9%</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>« Bon rythme. »</td>
+                        </tr>
+                        <tr>
+                            <td>Semaine 3</td>
+                            <td>208</td>
+                            <td>3</td>
+                            <td>97,5%</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>« Légère fatigue Sylvain. »</td>
+                        </tr>
+                        <tr>
+                            <td>Semaine 4</td>
+                            <td>215</td>
+                            <td>2</td>
+                            <td>98,3%</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>« RAS. »</td>
+                        </tr>
+                        <tr>
+                            <td>Semaine 5</td>
+                            <td>213</td>
+                            <td>3</td>
+                            <td>97,8%</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>« À suivre. »</td>
+                        </tr>
+                        <tr>
+                            <td>Semaine 6</td>
+                            <td>217</td>
+                            <td>3</td>
+                            <td>97,6%</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>–</td>
+                            <td>« Stable. »</td>
+                        </tr>
+                        <tr style="background: #e8f5e9;">
+                            <td>Semaine 7</td>
+                            <td>210</td>
+                            <td>3</td>
+                            <td>97,2%</td>
+                            <td>145</td>
+                            <td>0</td>
+                            <td>99,5%</td>
+                            <td>« Léa bien intégrée. Sylvain à aider. »</td>
+                        </tr>
+                        <tr style="background: #fff3e0;">
+                            <td>Semaine 8</td>
+                            <td>208</td>
+                            <td>4</td>
+                            <td>96,9%</td>
+                            <td>148</td>
+                            <td>1</td>
+                            <td>99,0%</td>
+                            <td>« En difficulté Sylvain. »</td>
+                        </tr>
+                        <tr style="background: #ffcdd2;">
+                            <td>Semaine 9</td>
+                            <td>205</td>
+                            <td>4</td>
+                            <td>96,5%</td>
+                            <td>150</td>
+                            <td>1</td>
+                            <td>98,8%</td>
+                            <td>« Ralentissement Sylvain. »</td>
+                        </tr>
+                        <tr style="background: #ffcdd2;">
+                            <td>Semaine 10</td>
+                            <td>202</td>
+                            <td>5</td>
+                            <td>96,0%</td>
+                            <td>152</td>
+                            <td>1</td>
+                            <td>98,7%</td>
+                            <td>« Tension visible Sylvain. »</td>
+                        </tr>
+                        <tr style="background: #f44336; color: white;">
+                            <td>Semaine 11</td>
+                            <td>198</td>
+                            <td>6</td>
+                            <td>95,2%</td>
+                            <td>149</td>
+                            <td>1</td>
+                            <td>98,5%</td>
+                            <td>« Erreurs en hausse Sylvain. »</td>
+                        </tr>
+                        <tr style="background: #d32f2f; color: white; font-weight: bold;">
+                            <td>Semaine 12</td>
+                            <td>195</td>
+                            <td>7</td>
+                            <td>94,5%</td>
+                            <td>147</td>
+                            <td>2</td>
+                            <td>98,2%</td>
+                            <td>« Alerte forte Sylvain. Léa stable. »</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div style="background: #4ecdc4; padding: 20px; border: 4px solid #000; border-radius: 10px; margin-top: 20px;">
@@ -770,7 +989,7 @@
             </div>
 
             <div class="warning-box">
-                <h3>DONNÉES CLÉS (Annexe 2A)</h3>
+                <h3>DONNÉES CLÉS</h3>
                 <p>
                     🔢 <strong>3 750 commandes</strong><br>
                     ⏰ <strong>7 heures</strong> disponibles<br>
@@ -813,6 +1032,125 @@
                     <li>📝 Rédige <strong>Procédure FALC Super-Samedi</strong></li>
                     <li>🎯 Garantit : zéro bad buzz TikTok !</li>
                 </ul>
+            </div>
+
+            <button class="expand-btn" onclick="toggleContent('annexe2')">📊 VOIR LES DONNÉES - ANNEXES 2A, 2B, 2C</button>
+
+            <div id="annexe2" class="hidden-content">
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">📋 Annexe 2A – Données Super-Samedi (principal)</h3>
+                <div class="annexe-intro">
+                    <ul style="line-height: 2;">
+                        <li>Volume à traiter : <strong>3 750 commandes</strong></li>
+                        <li>Shift : <strong>7 heures</strong></li>
+                        <li>Productivité cible théorique : <strong>35 colis/heure</strong></li>
+                        <li>Coefficient d'engagement : <strong>0,9</strong> → productivité réelle <strong>31,5 colis/heure</strong></li>
+                        <li>Effectif titulaire dispo : <strong>8 personnes</strong></li>
+                        <li>Productivité intérimaire : <strong>90% d'un titulaire</strong></li>
+                    </ul>
+                </div>
+
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">👥 Annexe 2B – Profils individuels</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Prénom</th>
+                            <th>Poste habituel</th>
+                            <th>Productivité (colis/h)</th>
+                            <th>Polyvalence</th>
+                            <th>Contraintes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #ffebee;">
+                            <td><strong>Sylvain</strong></td>
+                            <td>Préparation picking</td>
+                            <td>30</td>
+                            <td>Prépa uniquement</td>
+                            <td>Fatigue, stress numérique</td>
+                        </tr>
+                        <tr style="background: #e8f5e9;">
+                            <td><strong>Léa</strong></td>
+                            <td>Emballage</td>
+                            <td>24</td>
+                            <td>Emballage / Stickage</td>
+                            <td>RQTH, pauses régulières</td>
+                        </tr>
+                        <tr>
+                            <td>Karim</td>
+                            <td>Contrôle qualité</td>
+                            <td>32</td>
+                            <td>CQ / Prépa</td>
+                            <td>RAS</td>
+                        </tr>
+                        <tr>
+                            <td>Julie</td>
+                            <td>Emballage</td>
+                            <td>33</td>
+                            <td>Emballage / CQ</td>
+                            <td>Étudiante, pas après 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Max</td>
+                            <td>Expédition</td>
+                            <td>31</td>
+                            <td>Expédition / Prépa</td>
+                            <td>RAS</td>
+                        </tr>
+                        <tr>
+                            <td>Anaïs</td>
+                            <td>Préparation picking</td>
+                            <td>34</td>
+                            <td>Prépa / Emballage</td>
+                            <td>RAS</td>
+                        </tr>
+                        <tr>
+                            <td>Tom</td>
+                            <td>Expédition</td>
+                            <td>29</td>
+                            <td>Expédition / CQ</td>
+                            <td>RAS</td>
+                        </tr>
+                        <tr>
+                            <td>Noura</td>
+                            <td>Préparation picking</td>
+                            <td>32</td>
+                            <td>Prépa / CQ</td>
+                            <td>RAS</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">📊 Annexe 2C – Historique précédents Super-Samedi</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Commandes</th>
+                            <th>Effectif total</th>
+                            <th>Retards expédition</th>
+                            <th>Taux erreurs</th>
+                            <th>Commentaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Super-Samedi N-1</td>
+                            <td>3 200</td>
+                            <td>9 (titulaires + intérimaires)</td>
+                            <td>120 colis en retard</td>
+                            <td>1,5%</td>
+                            <td>Manque de staff en CQ</td>
+                        </tr>
+                        <tr style="background: #fff3e0;">
+                            <td>Super-Samedi N-2</td>
+                            <td>2 800</td>
+                            <td>7 (titulaires + intérimaires)</td>
+                            <td>250 colis en retard</td>
+                            <td>2,0%</td>
+                            <td>Surcharge en préparation</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div style="background: #4ecdc4; padding: 20px; border: 4px solid #000; border-radius: 10px; margin-top: 20px;">
@@ -879,6 +1217,83 @@
                 </ul>
             </div>
 
+            <button class="expand-btn" onclick="toggleContent('annexe3')">📊 VOIR LES DONNÉES - ANNEXES 3A, 3B, 3C</button>
+
+            <div id="annexe3" class="hidden-content">
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">💰 Annexe 3A – Coûts emballages</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Solution</th>
+                            <th>Coût matière/colis</th>
+                            <th>Temps emballage/colis</th>
+                            <th>Coût transport/colis</th>
+                            <th>Volume annuel (colis)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #e3f2fd;">
+                            <td><strong>Plastique</strong></td>
+                            <td>0,15 €</td>
+                            <td>20 s</td>
+                            <td>0,00 €</td>
+                            <td>100 000</td>
+                        </tr>
+                        <tr style="background: #e8f5e9;">
+                            <td><strong>Carton</strong></td>
+                            <td>0,45 €</td>
+                            <td>35 s</td>
+                            <td>0,10 €</td>
+                            <td>100 000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="annexe-intro">Coût main d'œuvre : <strong>25 €/h</strong>.</p>
+
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">📱 Annexe 3B – Données marketing</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Indicateur</th>
+                            <th>Plastique</th>
+                            <th>Carton</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Note moyenne Unboxing (sondage /5)</td>
+                            <td>4,1</td>
+                            <td>4,6</td>
+                        </tr>
+                        <tr style="background: #fff3e0;">
+                            <td>Taux de partage sur réseaux (%)</td>
+                            <td>6%</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr>
+                            <td>Taux de retour produit (%)</td>
+                            <td>2,0%</td>
+                            <td>1,7%</td>
+                        </tr>
+                        <tr style="background: #e8f5e9;">
+                            <td>Taux de recommandation (NPS)</td>
+                            <td>32</td>
+                            <td>45</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">📈 Annexe 3C – Hypothèses de ventes</h3>
+                <div class="annexe-intro">
+                    <ul style="line-height: 2;">
+                        <li>Volume annuel actuel : <strong>100 000 colis</strong></li>
+                        <li>Passage au carton : <strong>+ 2,5% de volume</strong> (soit + 2 500 colis)</li>
+                        <li>Marge moyenne par commande : <strong>18 €</strong></li>
+                        <li>Coût d'une rupture de stock sur une référence hype : 25 € de marge potentielle non réalisée (info extra, non directement utile au calcul)</li>
+                    </ul>
+                </div>
+            </div>
+
             <div style="background: #4ecdc4; padding: 20px; border: 4px solid #000; border-radius: 10px; margin-top: 20px;">
                 <h3 style="font-family: 'Bangers', cursive; font-size: 1.8em; margin-bottom: 10px;">📦 LIVRABLE MISSION 3</h3>
                 <p style="font-size: 1.1em; line-height: 1.8;">
@@ -906,7 +1321,7 @@
             <div class="speech-bubble">
                 <span class="role-tag">STEVEN - COMPTABLE</span>
                 <ul style="margin-top: 15px; line-height: 2;">
-                    <li>📊 Exploite Annexe 4</li>
+                    <li>📊 Exploite Annexe 4A</li>
                     <li>💰 Calcule <strong>pénalités par PO</strong></li>
                     <li>📉 Calcule <strong>préjudice commercial</strong></li>
                     <li>📋 Produit <strong>Tableau récapitulatif + TOTAL</strong></li>
@@ -931,6 +1346,82 @@
                     <li>🤝 Rassurer sur actions menées</li>
                     <li>💪 Mobiliser pour Super-Samedi malgré difficultés</li>
                 </ul>
+            </div>
+
+            <button class="expand-btn" onclick="toggleContent('annexe4')">📊 VOIR LES DONNÉES - ANNEXES 4A, 4B</button>
+
+            <div id="annexe4" class="hidden-content">
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">⚠️ Annexe 4A – Litige Tech-Asia (principal)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>PO</th>
+                            <th>Retard / Statut</th>
+                            <th>Pénalité contractuelle</th>
+                            <th>Clients perdus estimés</th>
+                            <th>Marge perdue par client</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #fff3e0;">
+                            <td><strong>PO-502</strong></td>
+                            <td>3 jours de retard</td>
+                            <td>50 € / jour</td>
+                            <td>12</td>
+                            <td>18 €</td>
+                        </tr>
+                        <tr style="background: #ffcdd2;">
+                            <td><strong>PO-503</strong></td>
+                            <td>9 jours de retard</td>
+                            <td>50 € / jour</td>
+                            <td>150</td>
+                            <td>18 €</td>
+                        </tr>
+                        <tr style="background: #f44336; color: white; font-weight: bold;">
+                            <td><strong>PO-505</strong></td>
+                            <td>Non livré (15 j estimés)</td>
+                            <td>100 € / jour</td>
+                            <td>450</td>
+                            <td>18 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="font-family: 'Bangers', cursive; font-size: 2em; margin: 30px 0 15px 0;">📊 Annexe 4B – Historique relationnel Tech-Asia</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Mois</th>
+                            <th>Nb commandes</th>
+                            <th>Retards signalés</th>
+                            <th>Geste commercial ?</th>
+                            <th>Commentaire interne</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mois N-3</td>
+                            <td>5</td>
+                            <td>1</td>
+                            <td>Oui (avoir 300 €)</td>
+                            <td>« Bon dialogue. »</td>
+                        </tr>
+                        <tr style="background: #e8f5e9;">
+                            <td>Mois N-2</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>Non</td>
+                            <td>« Fiable. »</td>
+                        </tr>
+                        <tr style="background: #fff3e0;">
+                            <td>Mois N-1</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>Non</td>
+                            <td>« Attention délais. »</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div style="background: #4ecdc4; padding: 20px; border: 4px solid #000; border-radius: 10px; margin-top: 20px;">
